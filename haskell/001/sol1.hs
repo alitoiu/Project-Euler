@@ -1,6 +1,5 @@
 import Data.List
 
-limit :: Int
 limit = 1000
 
 multiplesOf :: Int -> [Int]
