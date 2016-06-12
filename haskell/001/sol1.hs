@@ -1,7 +1,10 @@
 import Data.List
 
+limit :: Int
+limit = 1000
+
 multiplesOf :: Int -> [Int]
-multiplesOf value = takeWhile (< 1000) [j * value | j <- [1..]]
+multiplesOf value = takeWhile (< limit) [j * value | j <- [1..]]
 
 multiples :: [Int]
 multiples = union (multiplesOf 3) (multiplesOf 5)

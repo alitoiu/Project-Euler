@@ -1,8 +1,9 @@
+limit = 1000
+
 sumOf :: Int -> Int
 sumOf value = 
   value * n * (n + 1) `div` 2
   where
-    limit = 1000
     n = (limit - 1) `div` value
 
 solution :: Int
